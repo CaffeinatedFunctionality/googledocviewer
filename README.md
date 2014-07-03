@@ -30,14 +30,24 @@ You will need to add global jquery_mb_extruder object in your application.js:
 
 
 Set some class name or id to the anchor tag for all URLs to files that you want to be displayed using the Google Docs Viewer. E.g. "embed"
+
+```html
 	<a href="url/to/file.pdf" class="embed">Download file</a>
+```	
 or	
+```html
 	<a href="url/to/file.pdf" id="embedURL">Download file</a>
+```
 
 Initialize gDocsViewer and set it to process the URL with id or all URLs with the class name set in the previous step.
+
+```html
 	$('a.embed').gdocsViewer();
+```	
 or
+```html
 	$('#embedURL').gdocsViewer();
+```	
 
 ## Contributing
 
