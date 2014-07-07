@@ -47,7 +47,19 @@ Initialize gDocsViewer and set it to process the URL with id or all URLs with th
 or
 ```html
 	$('#embedURL').gdocsViewer();
+```
+
+## Settings
+
+The default width is 600px height is 700px. You can change this in your javascript by passing in a json object for width and height. For example, you would change width to 400px and height to 500px by doing...
+
+```html
+	$('a.embed').gdocsViewer({width :'400',height : '500'});
 ```	
+or
+```html
+	$('#embedURL').gdocsViewer({width :'400',height : '500'});
+```
 
 ## Contributing
 
