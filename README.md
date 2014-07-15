@@ -61,6 +61,12 @@ or
 	$('#embedURL').gdocsViewer({width :'400',height : '500'});
 ```
 
+### You can now change security settings! Default is 'http', however if you do not allow http in production you can now use https.
+
+```html
+  $('#embedURL').gdocsViewer({security : 'https'});
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/scy0846/googledocviewer/fork )
