@@ -10,8 +10,9 @@
 	$.fn.gdocsViewer = function(options) {
 	
 		var settings = {
-			width  : '600',
-			height : '700'
+			width    : '600',
+			height   : '700',
+			security : 'http'
 		};
 		
 		if (options) { 
@@ -26,7 +27,7 @@
 				$(this).after(function () {
 					var id = $(this).attr('id');
 					var gdvId = (typeof id !== 'undefined' && id !== false) ? id + '-gdocsviewer' : '';
-					return '<div id="' + gdvId + '" class="gdocsviewer"><iframe src="http://docs.google.com/viewer?embedded=true&url=' + encodeURIComponent(file) + '" width="' + settings.width + '" height="' + settings.height + '" style="border: none;"></iframe></div>';
+					return '<div id="' + gdvId + '" class="gdocsviewer"><iframe src="'settings.security + '://docs.google.com/viewer?embedded=true&url=' + encodeURIComponent(file) + '" width="' + settings.width + '" height="' + settings.height + '" style="border: none;"></iframe></div>';
 				})
 			}
 		});
